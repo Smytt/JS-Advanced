@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Time Converter</title>
+    <style>
+        label, input {
+            display: inline-block;
+            width: 5em;
+        }
+
+        label {
+            text-align: right;
+        }
+    </style>
+</head>
+<body onload="attachEventsListeners()">
+<h1>Time Converter</h1>
+<div>
+    <label for="days">Days: </label>
+    <input type="text" id="days">
+    <input id="daysBtn" type="button" value="Convert">
+</div>
+<div>
+    <label for="hours">Hours: </label>
+    <input type="text" id="hours">
+    <input id="hoursBtn" type="button" value="Convert">
+</div>
+<div>
+    <label for="minutes">Minutes: </label>
+    <input type="text" id="minutes">
+    <input id="minutesBtn" type="button" value="Convert">
+</div>
+<div>
+    <label for="seconds">Seconds: </label>
+    <input type="text" id="seconds">
+    <input id="secondsBtn" type="button" value="Convert">
+</div>
+<script>
+    function attachEventsListeners() {
+        let convert = () => {
+            let values = document.querySelectorAll('input[type="text"]')
+            for (let value of values) {
+                if (value.value !== '') {
+                    let seconds = 0
+                    let type = value.id
+                    switch (type) {
+                        case 'days': seconds = Number(value.value) * 86400; break;
+                        case 'hours': seconds = Number(value.value) * 3600; break;
+                        case 'minutes': seconds = Number(value.value) * 60; break;
+                        case 'seconds': seconds = value.value
+                    }
+
+                    for (let value of values) {
+                        let fillType = value.id
+                        switch (fillType) {
+                            case 'days': value.value = seconds / 86400; break;
+                            case 'hours': value.value = seconds / 3600; break;
+                            case 'minutes': value.value = seconds / 60; break
+                            case 'seconds': value.value = seconds; break;
+                        }
+                    }
+                }
+            }
+        }
+        let btns = document.querySelectorAll('input[type="button"]')
+        for (let btn of btns) {
+            btn.addEventListener('click', convert)
+        }
+    }
+</script>
+</body>
+</html>

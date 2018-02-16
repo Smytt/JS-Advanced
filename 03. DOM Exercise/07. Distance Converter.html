@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Distance Converter</title>
+    <style>
+        label, input {
+            display: inline-block;
+            width: 5em;
+        }
+
+        label {
+            text-align: right;
+        }
+    </style>
+</head>
+<body onload="attachEventsListeners()">
+<h1>Distance Converter</h1>
+<div>
+    <label for="inputDistance">From:</label>
+    <input type="text" id="inputDistance">
+    <select id="inputUnits">
+        <option value="km">Kilometers</option>
+        <option value="m">Meters</option>
+        <option value="cm">Centimeters</option>
+        <option value="mm">Millimeters</option>
+        <option value="mi">Miles</option>
+        <option value="yrd">Yards</option>
+        <option value="ft">Feet</option>
+        <option value="in">Inches</option>
+    </select>
+    <input type="button" id="convert" value="Convert">
+</div>
+<div>
+    <label for="outputDistance">To:</label>
+    <input type="text" id="outputDistance" disabled="disabled">
+    <select id="outputUnits">
+        <option value="km">Kilometers</option>
+        <option value="m">Meters</option>
+        <option value="cm">Centimeters</option>
+        <option value="mm">Millimeters</option>
+        <option value="mi">Miles</option>
+        <option value="yrd">Yards</option>
+        <option value="ft">Feet</option>
+        <option value="in">Inches</option>
+    </select>
+</div>
+<script>
+    function attachEventsListeners() {
+
+        document.getElementById('convert').addEventListener('click', convert)
+
+        function convert() {
+
+            let m = 0
+            let from = document.getElementById('inputUnits')
+            let startDistance = document.getElementById('inputDistance').value
+            let endDistance = document.getElementById('outputDistance')
+            let to = document.getElementById('outputUnits')
+
+            switch (from.value) {
+                case 'km': m = startDistance * 1000; break;
+                case 'm': m = Number(startDistance); break;
+                case 'cm': m = startDistance * 0.01; break;
+                case 'mm': m = startDistance * 0.001; break;
+                case 'mi': m = startDistance * 1609.34; break;
+                case 'yrd': m = startDistance * 0.9144; break;
+                case 'ft': m = startDistance * 0.3048; break;
+                case 'in': m = startDistance * 0.0254; break;
+            }
+
+            switch (to.value) {
+                case 'km': endDistance.value = m / 1000; break;
+                case 'm': endDistance.value = m; break;
+                case 'cm': endDistance.value = m / 0.01; break;
+                case 'mm': endDistance.value = m / 0.001; break;
+                case 'mi': endDistance.value = m / 1609.34; break;
+                case 'yrd': endDistance.value = m / 0.9144; break;
+                case 'ft': endDistance.value = m / 0.3048; break;
+                case 'in': endDistance.value = m / 0.0254; break;
+            }
+        }
+    }
+</script>
+</body>
+</html>
