@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4e174190-8571-4e5f-8415-d4ba1a42f729" name="Default" comment="" />
+    <list default="true" id="c43194c3-d735-48a7-942c-2cab3c2a95ed" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -12,75 +12,51 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="01. Sum Numbers.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/01. Sum Numbers.html">
+      <file leaf-file-name="01. Subtraction.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/01. Subtraction.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="9" lean-forward="true" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
+            <state relative-caret-position="306">
+              <caret line="18" column="8" lean-forward="true" selection-start-line="18" selection-start-column="8" selection-end-line="23" selection-end-column="9" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="02. Show More.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/02. Show More.html">
+      <file leaf-file-name="02. Fill Dropdown.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/02. Fill Dropdown.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="4" lean-forward="true" selection-start-line="4" selection-start-column="4" selection-end-line="7" selection-end-column="5" />
-              <folding>
-                <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="03. Collect List.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/03. Collect List.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="8" lean-forward="false" selection-start-line="8" selection-start-column="8" selection-end-line="16" selection-end-column="5" />
+            <state relative-caret-position="272">
+              <caret line="16" column="8" lean-forward="false" selection-start-line="16" selection-start-column="8" selection-end-line="28" selection-end-column="5" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="04. Colorize Table.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/04. Colorize Table.html">
+      <file leaf-file-name="03. Accordion.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/03. Accordion.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="24" column="4" lean-forward="true" selection-start-line="24" selection-start-column="4" selection-end-line="32" selection-end-column="5" />
+            <state relative-caret-position="334">
+              <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="05. Countdown.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/05. Countdown.html">
+      <file leaf-file-name="04. Sections.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/04. Sections.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="10" lean-forward="true" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
-              <folding>
-                <element signature="n#style#0;n#input#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="06. Extract Parenthesis.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/06. Extract Parenthesis.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" column="4" lean-forward="true" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="4" />
+            <state relative-caret-position="221">
+              <caret line="13" column="22" lean-forward="false" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="07. Sum Table.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/07. Sum Table.html">
+      <file leaf-file-name="05. Notification.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/05. Notification.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="27" column="4" lean-forward="true" selection-start-line="27" selection-start-column="4" selection-end-line="35" selection-end-column="5" />
+            <state relative-caret-position="538">
+              <caret line="47" column="22" lean-forward="true" selection-start-line="47" selection-start-column="22" selection-end-line="47" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -103,13 +79,11 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/01. Sum Numbers.html" />
-        <option value="$PROJECT_DIR$/02. Show More.html" />
-        <option value="$PROJECT_DIR$/03. Collect List.html" />
-        <option value="$PROJECT_DIR$/04. Colorize Table.html" />
-        <option value="$PROJECT_DIR$/05. Countdown.html" />
-        <option value="$PROJECT_DIR$/06. Extract Parenthesis.html" />
-        <option value="$PROJECT_DIR$/07. Sum Table.html" />
+        <option value="$PROJECT_DIR$/01. Subtraction.html" />
+        <option value="$PROJECT_DIR$/02. Fill Dropdown.html" />
+        <option value="$PROJECT_DIR$/03. Accordion.html" />
+        <option value="$PROJECT_DIR$/04. Sections.html" />
+        <option value="$PROJECT_DIR$/05. Notification.html" />
       </list>
     </option>
   </component>
@@ -483,17 +457,17 @@
         <subPane>
           <expand>
             <path>
-              <item name="01. DOM" type="b2602c69:ProjectViewProjectNode" />
-              <item name="01. DOM" type="462c0819:PsiDirectoryNode" />
+              <item name="03. DOM Exercise" type="b2602c69:ProjectViewProjectNode" />
+              <item name="03. DOM Exercise" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="AndroidView" />
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -508,7 +482,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Softuni\JS Core\JS Advanced\01. DOM" />
+      <recent name="D:\Softuni\JS Core\JS Advanced\03. DOM Exercise" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -611,17 +585,17 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="4e174190-8571-4e5f-8415-d4ba1a42f729" name="Default" comment="" />
-      <created>1518528627748</created>
+      <changelist id="c43194c3-d735-48a7-942c-2cab3c2a95ed" name="Default" comment="" />
+      <created>1518781568555</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1518528627748</updated>
-      <workItem from="1518528636228" duration="6154000" />
+      <updated>1518781568555</updated>
+      <workItem from="1518781571683" duration="2295000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6154000" />
+    <option name="totallyTimeSpent" value="2295000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -667,62 +641,42 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/01. Sum Numbers.html">
+    <entry file="file://$PROJECT_DIR$/01. Subtraction.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="9" lean-forward="true" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
+        <state relative-caret-position="306">
+          <caret line="18" column="8" lean-forward="true" selection-start-line="18" selection-start-column="8" selection-end-line="23" selection-end-column="9" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/02. Show More.html">
+    <entry file="file://$PROJECT_DIR$/02. Fill Dropdown.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="4" lean-forward="true" selection-start-line="4" selection-start-column="4" selection-end-line="7" selection-end-column="5" />
-          <folding>
-            <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/03. Collect List.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="8" lean-forward="false" selection-start-line="8" selection-start-column="8" selection-end-line="16" selection-end-column="5" />
+        <state relative-caret-position="272">
+          <caret line="16" column="8" lean-forward="false" selection-start-line="16" selection-start-column="8" selection-end-line="28" selection-end-column="5" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/04. Colorize Table.html">
+    <entry file="file://$PROJECT_DIR$/03. Accordion.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="4" lean-forward="true" selection-start-line="24" selection-start-column="4" selection-end-line="32" selection-end-column="5" />
+        <state relative-caret-position="334">
+          <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/05. Countdown.html">
+    <entry file="file://$PROJECT_DIR$/04. Sections.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="10" lean-forward="true" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
-          <folding>
-            <element signature="n#style#0;n#input#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/06. Extract Parenthesis.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="4" lean-forward="true" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="4" />
+        <state relative-caret-position="221">
+          <caret line="13" column="22" lean-forward="false" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/07. Sum Table.html">
+    <entry file="file://$PROJECT_DIR$/05. Notification.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="27" column="4" lean-forward="true" selection-start-line="27" selection-start-column="4" selection-end-line="35" selection-end-column="5" />
+        <state relative-caret-position="538">
+          <caret line="47" column="22" lean-forward="true" selection-start-line="47" selection-start-column="22" selection-end-line="47" selection-end-column="22" />
           <folding />
         </state>
       </provider>
