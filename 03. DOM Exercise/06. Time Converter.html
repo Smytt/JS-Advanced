@@ -36,38 +36,47 @@
     <input type="text" id="seconds">
     <input id="secondsBtn" type="button" value="Convert">
 </div>
-<script>
-    function attachEventsListeners() {
-        let convert = () => {
-            let values = document.querySelectorAll('input[type="text"]')
-            for (let value of values) {
-                if (value.value !== '') {
-                    let seconds = 0
-                    let type = value.id
-                    switch (type) {
-                        case 'days': seconds = Number(value.value) * 86400; break;
-                        case 'hours': seconds = Number(value.value) * 3600; break;
-                        case 'minutes': seconds = Number(value.value) * 60; break;
-                        case 'seconds': seconds = value.value
-                    }
+<script>function attachEventsListeners() {
 
-                    for (let value of values) {
-                        let fillType = value.id
-                        switch (fillType) {
-                            case 'days': value.value = seconds / 86400; break;
-                            case 'hours': value.value = seconds / 3600; break;
-                            case 'minutes': value.value = seconds / 60; break
-                            case 'seconds': value.value = seconds; break;
-                        }
-                    }
-                }
-            }
-        }
-        let btns = document.querySelectorAll('input[type="button"]')
-        for (let btn of btns) {
-            btn.addEventListener('click', convert)
-        }
+    let buttons = document.querySelectorAll('div input:nth-child(3)');
+
+    for (const button of buttons) {
+        button.addEventListener('click', calc);
     }
+
+    let timeObject = {
+        'days': 1,
+        'hours': 24,
+        'minutes': 1440,
+        'seconds': 86400
+    }
+
+    function calc(event) {
+        let days = document.getElementById('days');
+        let hours = document.getElementById('hours');
+        let minutes = document.getElementById('minutes');
+        let seconds = document.getElementById('seconds');
+
+        let convertedToDays = 0;
+
+        //Convert the input to days
+        if (this.id === 'daysBtn') {
+            convertedToDays = document.getElementById('days').value;
+        } else if (this.id === 'hoursBtn') {
+            convertedToDays = document.getElementById('hours').value / timeObject.hours
+        } else if (this.id === 'minutesBtn') {
+            convertedToDays = document.getElementById('minutes').value / timeObject.minutes
+        } else if (this.id === 'secondsBtn') {
+            convertedToDays = document.getElementById('seconds').value / timeObject.seconds
+        }
+
+        days.value = convertedToDays;
+        hours.value = convertedToDays * timeObject.hours;
+        minutes.value = convertedToDays * timeObject.minutes;
+        seconds.value = convertedToDays * timeObject.seconds;
+
+    }
+}
 </script>
 </body>
 </html>
