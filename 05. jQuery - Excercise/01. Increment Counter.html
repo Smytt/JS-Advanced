@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Increment Counter</title>
+    <script src="jquery-3.3.1.min.js"></script>
+</head>
+<body>
+<div id="wrapper">
+</div>
+<script>
+    window.onload = function(){
+        increment("#wrapper");
+    }
+
+    function increment(id) {
+        $(id)
+            .append($('<textarea class="counter">').val('0'))
+            .append($('<button class="btn" id="incrementBtn">').text('Increment').click(increment))
+            .append($('<button class="btn" id="addBtn">').text('Add').click(add))
+            .append($('<ul class="results">'))
+
+        function increment() {
+            $('.counter').val(Number($('.counter').val()) + 1)
+        }
+        function add() {
+            $('.results').append($('<li>').text($('.counter').val()))
+        }
+    }
+</script>
+</body>
+</html>

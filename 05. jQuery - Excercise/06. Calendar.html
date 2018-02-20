@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calendar</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            padding: 0.25em;
+            margin: 0;
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+
+        th, td {
+            width: 2.5em;
+        }
+
+        .today {
+            background-color: orange;
+            color: white;
+        }
+    </style>
+    <script src="jquery-3.3.1.min.js"></script>
+</head>
+<body>
+<div id="content">
+</div>
+<script>
+    window.onload = function () {
+        calendar([9, 2, 2016]);
+
+        function calendar([d, m, y]) {
+            let date = new Date(y, m - 1, d)
+            let numberOfDays = new Date(y, m, 0).getDate()
+            let dayOfWeek = new Date(y, m - 1, 1).getDay()
+            if (dayOfWeek === 0) dayOfWeek = 7
+            let monthNames = ["January", "February", "March", "April", "May", "June",
+                "July", "August", "September", "October", "November", "December"
+            ];
+
+            $('#content')
+                .append($('<table>')
+                    .append($('<caption>').text(monthNames[m - 1] + ' ' + y))
+                    .append($('<tbody>')
+                        .append($('<tr>')
+                            .append($('<th>').text('Mon'))
+                            .append($('<th>').text('Tue'))
+                            .append($('<th>').text('Wed'))
+                            .append($('<th>').text('Thu'))
+                            .append($('<th>').text('Fri'))
+                            .append($('<th>').text('Sat'))
+                            .append($('<th>').text('Sun'))
+                        )
+                    )
+                )
+
+            let currentDay = 1
+            while (currentDay <= numberOfDays) {
+                let dow = 1
+                let tr = $('<tr>')
+                while (dow <= 7) {
+                    let td = $('<td>')
+                    if (currentDay === d) {
+                        td.addClass('today')
+                    }
+                    if (currentDay > 1 && currentDay <= numberOfDays) {
+                        td.text(currentDay++)
+                        dow++
+                    }
+                    else if (dow++ >= dayOfWeek && currentDay === 1) {
+                        td.text(currentDay++)
+                    }
+                    tr.append(td)
+                }
+                $('tbody').append(tr)
+            }
+        }
+    }
+</script>
+</body>
+</html>
