@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Wiki Parser</title>
+    <script src="jquery-3.3.1.min.js"></script>
+</head>
+<body>
+<div>
+    <p id="wiki">
+        =Document title=
+        ==First segment==
+        '''bold 1''' word ''italics 1'' '''bold2'''
+        [[hyper first]] '''Bold three''' ''italics2'''
+        word [[hyper2]] [[hyperlink2|with Label]]
+        ==Second segment==
+        ===Third segment===
+        word '''word'''[[pipe|bomb]]
+    </p>
+</div>
+<script>
+    window.onload = function () {
+        wikiParser('#wiki');
+
+        function wikiParser(selector) {
+            let text = $(selector).text()
+            text = text
+                .replace(/===(.+?)===/g, (match, g1) => $('<div>').append($('<h3>').text(g1)).html())
+                .replace(/==(.+?)==/g, (match, g1) => $('<div>').append($('<h2>').text(g1)).html())
+                .replace(/=(.+?)=/g, (match, g1) => $('<div>').append($('<h1>').text(g1)).html())
+                .replace(/'''(.+?)'''/g, (match, g1) => $('<div>').append($('<b>').text(g1)).html())
+                .replace(/''(.+?)''/g, (match, g1) => $('<div>').append($('<i>').text(g1)).html())
+                .replace(/\[\[([^\[\]]+?)(?:\|([^\[\]]+?))?\]\]/g, (match, g1, g2) => {
+                    if (g2)
+                        return $('<div>').append($('<a href="/wiki/' + g1 + '">').text(g2)).html()
+                    return $('<div>').append($('<a href="/wiki/' + g1 + '">').text(g1)).html()
+                })
+
+            $(selector).html(text)
+        }
+    }
+</script>
+</body>
+</html>
