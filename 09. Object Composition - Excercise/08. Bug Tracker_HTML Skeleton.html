@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bug Tracker</title>
+    <style>
+        #wrapper {
+            width: 800px;
+            border: 1px solid black;
+        }
+
+        #titlebar {
+            background-color: beige;
+            font-size: 2em;
+            padding: 0.5em;
+        }
+
+        .report {
+            margin: 1em;
+            border: 1px solid black;
+            width: 400px;
+        }
+
+        .report .title {
+            background-color: cornflowerblue;
+            color: white;
+            padding: 0.25em;
+            position: relative;
+        }
+
+        .report .body p {
+            margin: 0.5em;
+        }
+
+        .report .title .status {
+            display: inline-block;
+            right: 0px;
+            position: absolute;
+            margin-right: 0.5em;
+        }
+    </style>
+    <script src="jquery-3.3.1.min.js"></script>
+</head>
+<body>
+<div id="wrapper">
+    <div id="titlebar">Bug tracker</div>
+    <div id="content">
+    </div>
+</div>
+<script>
+    let result = () => {
+        let bugs = []
+        let id = 0;
+        let selector = ''
+
+        function report(author, description, reproducible, severity) {
+            let obj = {
+                ID: id++,
+                author,
+                description,
+                reproducible,
+                severity,
+                status: 'Open'
+            }
+            appendBug(obj)
+            bugs.push(obj)
+        }
+
+        function setStatus(id, newStatus) {
+            let index = bugs.findIndex(x => x.ID === id)
+            bugs[index].status = newStatus
+            $('#report_' + id + ' .status').text(`${bugs[index].status} | ${bugs[index].severity}`)
+        }
+
+        function remove(id) {
+            bugs.splice(bugs.findIndex(x => x.ID = id))
+            $('#report_' + id).remove()
+
+        }
+
+        function sort(method) {
+            bugs.sort((a, b) => {
+                if (a[method] < b[method]) return -1
+                if (a[method] > b[method]) return 1
+                return 0
+            })
+
+            $(selector).html('')
+            bugs.forEach(bug => {
+                $(selector).append(reportTemplate(bug))
+            })
+        }
+
+        function output(string) {
+            selector = string
+        }
+
+        function reportTemplate(bug) {
+            return `<div id="report_${bug.ID}" class="report">
+                      <div class="body">
+                        <p>${bug.description}</p>
+                      </div>
+                      <div class="title">
+                        <span class="author">Submitted by: ${bug.author}</span>
+                        <span class="status">${bug.status} | ${bug.severity}</span>
+                      </div>
+                    </div>`
+        }
+
+        function appendBug(bug) {
+            $(selector).append(reportTemplate(bug))
+        }
+
+
+        return {
+            report,
+            setStatus,
+            remove,
+            sort,
+            output
+        }
+    }
+    let tracker = result();
+
+    tracker.output('#content');
+    tracker.report('kiwi', 'judge rip', true, 5);
+    tracker.setStatus(0, 'Tralala');
+</script>
+</body>
+</html>
