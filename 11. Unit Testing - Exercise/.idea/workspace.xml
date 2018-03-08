@@ -2,20 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="61ae268f-75ae-4b19-83e2-9ecebe0f16f9" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/03. Char Lookup.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/04. Math Enforcer.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/05. Shared Object.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/06. ArmageDOM.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/armageDom.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/charLookup.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/mathEnforcer.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/oddOrEven.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/sharedObject.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../10. Unit Testing - Lab/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../10. Unit Testing - Lab/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/02. Even or Odd.js" afterPath="$PROJECT_DIR$/02. Even or Odd.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/11. Unit Testing - Exercise.iml" afterPath="$PROJECT_DIR$/11. Unit Testing - Exercise.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/armageDom.js" afterPath="$PROJECT_DIR$/tests/armageDom.js" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -112,13 +101,13 @@
       <file leaf-file-name="armageDom.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/tests/armageDom.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="465">
-              <caret line="36" column="25" lean-forward="false" selection-start-line="36" selection-start-column="25" selection-end-line="36" selection-end-column="25" />
+            <state relative-caret-position="-215">
+              <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
               <folding>
-                <marker date="1520510599371" expanded="true" signature="128:410" ph="..." />
-                <marker date="1520510599371" expanded="true" signature="160:204" ph="..." />
-                <marker date="1520510599371" expanded="true" signature="229:265" ph="..." />
-                <marker date="1520510599371" expanded="true" signature="290:403" ph="..." />
+                <marker date="1520530771538" expanded="true" signature="242:524" ph="..." />
+                <marker date="1520530771538" expanded="true" signature="274:318" ph="..." />
+                <marker date="1520530771538" expanded="true" signature="343:379" ph="..." />
+                <marker date="1520530771538" expanded="true" signature="404:517" ph="..." />
               </folding>
             </state>
           </provider>
@@ -208,8 +197,8 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="953" />
-    <option name="width" value="974" />
+    <option name="x" value="1406" />
+    <option name="width" value="521" />
     <option name="height" value="1047" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -592,7 +581,7 @@
       <option name="presentableId" value="Default" />
       <updated>1520358537389</updated>
       <workItem from="1520358539393" duration="3690000" />
-      <workItem from="1520421062921" duration="8090000" />
+      <workItem from="1520421062921" duration="9372000" />
     </task>
     <task id="LOCAL-00001" summary="unit exercise">
       <created>1520358728006</created>
@@ -622,25 +611,17 @@
       <option name="project" value="LOCAL" />
       <updated>1520420895236</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="unit exercise">
+      <created>1520510639177</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1520510639177</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Shared_object - 2018.03.07 at 22h 40m 36s.xml">
-      <configuration name="Shared object" configurationId="mocha-javascript-test-runner" />
-    </history-entry>
-    <history-entry file="Shared_object - 2018.03.07 at 22h 42m 02s.xml">
-      <configuration name="Shared object" configurationId="mocha-javascript-test-runner" />
-    </history-entry>
-    <history-entry file="Shared_object - 2018.03.07 at 22h 43m 02s.xml">
-      <configuration name="Shared object" configurationId="mocha-javascript-test-runner" />
-    </history-entry>
-    <history-entry file="Shared_object - 2018.03.07 at 22h 45m 16s.xml">
-      <configuration name="Shared object" configurationId="mocha-javascript-test-runner" />
-    </history-entry>
-    <history-entry file="Shared_object - 2018.03.07 at 22h 48m 44s.xml">
-      <configuration name="Shared object" configurationId="mocha-javascript-test-runner" />
-    </history-entry>
     <history-entry file="Test_armageDom - 2018.03.08 at 13h 57m 52s.xml">
       <configuration name="Test armageDom" configurationId="mocha-javascript-test-runner" />
     </history-entry>
@@ -653,29 +634,44 @@
     <history-entry file="Test_armageDom - 2018.03.08 at 14h 03m 21s.xml">
       <configuration name="Test armageDom" configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="Test_sharedObject - 2018.03.07 at 22h 48m 52s.xml">
-      <configuration name="Test sharedObject" configurationId="mocha-javascript-test-runner" />
+    <history-entry file="Test_armageDom - 2018.03.08 at 14h 06m 22s.xml">
+      <configuration name="Test armageDom" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
+    <history-entry file="Test_armageDom - 2018.03.08 at 14h 06m 46s.xml">
+      <configuration name="Test armageDom" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
+    <history-entry file="Test_armageDom - 2018.03.08 at 14h 07m 18s.xml">
+      <configuration name="Test armageDom" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
+    <history-entry file="Test_armageDom - 2018.03.08 at 14h 08m 53s.xml">
+      <configuration name="Test armageDom" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
+    <history-entry file="Test_armageDom - 2018.03.08 at 14h 09m 14s.xml">
+      <configuration name="Test armageDom" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
+    <history-entry file="Test_armageDom - 2018.03.08 at 14h 12m 09s.xml">
+      <configuration name="Test armageDom" configurationId="mocha-javascript-test-runner" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11780000" />
+    <option name="totallyTimeSpent" value="13062000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="953" y="0" width="974" height="1047" extended-state="0" />
+    <frame x="1406" y="0" width="521" height="1047" extended-state="0" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32977587" sideWeight="0.2526096" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32977587" sideWeight="0.2891089" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32977587" sideWeight="0.49659863" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32977587" sideWeight="0.7473904" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32977587" sideWeight="0.71089107" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2682672" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.5089109" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -823,13 +819,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tests/armageDom.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="36" column="25" lean-forward="false" selection-start-line="36" selection-start-column="25" selection-end-line="36" selection-end-column="25" />
+        <state relative-caret-position="-215">
+          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
           <folding>
-            <marker date="1520510599371" expanded="true" signature="128:410" ph="..." />
-            <marker date="1520510599371" expanded="true" signature="160:204" ph="..." />
-            <marker date="1520510599371" expanded="true" signature="229:265" ph="..." />
-            <marker date="1520510599371" expanded="true" signature="290:403" ph="..." />
+            <marker date="1520530771538" expanded="true" signature="242:524" ph="..." />
+            <marker date="1520530771538" expanded="true" signature="274:318" ph="..." />
+            <marker date="1520530771538" expanded="true" signature="343:379" ph="..." />
+            <marker date="1520530771538" expanded="true" signature="404:517" ph="..." />
           </folding>
         </state>
       </provider>
