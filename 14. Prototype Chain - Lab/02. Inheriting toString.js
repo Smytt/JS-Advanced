@@ -35,12 +35,3 @@ function personAndTeacher() {
         Teacher
     }
 }
-
-let classes = personAndTeacher();
-let Person = classes.Person;
-let Teacher = classes.Teacher;
-let Student = classes.Student;
-
-let t = new Teacher("Gosho",'gosh@gosh.com',"Graphics");
-
-console.log(t.toString())
