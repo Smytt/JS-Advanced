@@ -1,0 +1,7 @@
+{
+  "name": "Exam 2017.07.23",
+  "version": "0.0.1",
+  "dependencies": {
+    "chai": "latest"
+  }
+}
