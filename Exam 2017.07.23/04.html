@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Contacts Builder</title>
+    <style>
+        article {
+            background: #EEE;
+            padding: 1px;
+            width: 250px;
+            margin: 1px;
+        }
+
+        .title {
+            background: #DDD;
+            padding: 5px;
+            font-weight: bold;
+        }
+
+        .title button {
+            float: right
+        }
+
+        .info {
+            margin: 5px;
+        }
+
+        .info span {
+            display: block;
+        }
+
+        .online {
+            background: #9E9;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+</head>
+<body>
+<div id="main"></div>
+<script src="04. Contacts.js"></script>
+<script>
+    class Contact {
+        constructor(firstName, lastName, phone, email) {
+            this.firstName = firstName
+            this.lastName = lastName
+            this.phone = phone
+            this.email = email
+            this.article = $('<article>')
+            this.online = false
+        }
+
+        get online() {
+            return this._online;
+        }
+
+        set online(value) {
+            let title = this.article.find('.title')
+            title.addClass('online')
+            if (value === false) {
+                title.removeClass('online')
+            }
+            this._online = value;
+        }
+
+        render(id) {
+            let btn = $('<button>')
+            btn.html(`&#8505;`)
+            btn.click(this.toggle.bind(this))
+            this.article
+                .append($('<div class="title">').text(`${this.firstName} ${this.lastName}`)
+                    .append(btn))
+                .append($('<div class="info" style="display: none">')
+                    .append($('<span>').html(`&phone; ${this.phone}`))
+                    .append($('<span>').html(`&#9993; ${this.email}`)))
+            if(this.online === true)
+            this.article.find('.title').addClass('online')
+            $(`#${id}`).append(this.article)
+        }
+
+        toggle(e) {
+            let info = this.article.find('.info')
+            if (info.css('display') === 'none') {
+                info.css('display', 'block')
+            }
+            else {
+                info.css('display', 'none')
+            }
+
+        }
+    }
+
+
+    let data = {
+        firstName: 'Ivan',
+        lastName: 'Ivanov',
+        phone: '0888 123 456',
+        email: 'i.ivanov@gmail.com'
+    };
+
+    let contact;
+    contact = new Contact(data.firstName, data.lastName, data.phone, data.email)
+    contact.online = true;
+    contact.render('main');
+
+    let element = $('#holder').find('article')
+    let title = element.find('.title')
+//    console.log(title.hasClass('online'));
+</script>
+</body>
+</html>
